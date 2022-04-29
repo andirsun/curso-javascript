@@ -4,6 +4,6 @@
 // Objetos en javascript
 // Comparadores (>, <, ===, !==, ! )
 // Operadores logicos (&& ||)
-
+Hola
 // Condicionales
 
