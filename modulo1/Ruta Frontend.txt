@@ -1,0 +1,50 @@
+Ruta Frontend
+- MODULO 1 -> Bases teoricas y logica de programacion
+  - Instalacion de entorno de programacion - Visual studio code - Github (Creacion de cuenta e instalacion)
+  - Como funciona internet (Frontend, backend, bases de datos)
+    - Servidores DNS, estaticos, DHCP
+  - Javascript
+    - Instalacion, configuracion, documentacion
+    - Aplicacion de logica de programacion en el lenguaje
+  - Logica de programacion (Conceptual)
+    - Variables, constantes
+    - Condicionales
+    - Ciclos
+    - Diagramas de Flujo
+  - Funciones y procedimientos (2 clases)
+  - Ejercicios y resolucion de problemas
+  - Proyecto 1 -> Maquina expendedora
+
+- Modulo 2 -> Desarrollo web, herramientas de trabajo
+  - Bases del desarrollo frontend
+    - HTML, CSS
+    - Javascript
+  - Typescript
+  Comprar y configurar un dominio en internet (.com, .co)
+  - Proyecto 2 -> Crear mi propia pagina web
+
+- Modulo 3 -> Backend y bases de datos
+  - Frameworks Javascript
+    - Paquetes NPM
+  
+  - Node Js
+    - Creacion de una API rest basica
+  - Bases de datos - MongoDB
+ 
+  - Proyecto 3 - A gran escala (Por definir)
+    - Comprar y configurar un dominio en internet (.com, .co)
+    - Configurar el servidor DNS
+    - Desplegar el codigo en Vercel o Firebase (Montarlo a internet)
+    - Publicar el proyecto
+  
+  - Creacion de CV  (Hoja de vida)
+  - Portales para conseguir empleo
+  - Como solucionar una prueba tecnica
+  - A TRABAJAR :)
+
+
+
+
+
+
+- MODULO 2 -> 

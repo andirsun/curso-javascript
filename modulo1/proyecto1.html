@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+    <title>Change_me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+  </head>
+
+  <body>
+  <script>
+    let dinero = 10000
+    const productos = {
+      1: {
+        codigo: 1,
+        precio: 2000,
+        cantidad: 1,
+        nombre: "Papas"
+      },
+      2: {
+        codigo: 2,
+        precio: 3000,
+        cantidad: 5,
+        nombre: "Yogurt"
+      },
+      3: {
+        codigo: 3,
+        precio: 2000,
+        cantidad: 5,
+        nombre: "Empanada"
+      },
+      4: {
+        codigo: 4,
+        precio: 3500,
+        cantidad: 5,
+        nombre: "Gaseosa"
+      }
+    }
+    const generarReporte = () => {
+      alert(JSON.stringify(productos) + dinero)
+    }
+
+    const iniciarCompra = () => {
+      const productCode = parseInt(prompt("Que producto quiere comprar (1-5)"))
+      const product = productos[productCode]
+      if (product.cantidad === 0) {
+        alert('El producto no esta disponible por el momento, por favor elige otro')
+        return
+      }
+      // quiere decir que tiene cantidad
+      const userPayment = parseInt(prompt(`Valor (${product.precio}) Con cuanto pagas? (Ingresa el valor)`))
+      if (userPayment < product.precio) {
+        return
+      } else if ((userPayment - product.precio) > dinero) {
+        alert ('La maquina no tiene suficiente cambio elige otro producto o vuelve luego')
+        return
+      }
+      // Dar cambio
+      const cambio = userPayment - product.precio
+      // Actualizo el dinero de la maquina
+      dinero -= cambio
+      alert(`Esperamos disfrute su(s): ${product.nombre}, su cambio es de: ${cambio}. Adios`)
+      // Actualizo el producto
+      productos[productCode].cantidad -= 1
+      // Agrego el dinero de la venta
+      dinero += userPayment
+    }
+
+    const topUpProduct = () => {
+      const productCode = parseInt(prompt("Que producto quiere rellenar (1-5)"))
+      const qty = parseInt(prompt("Cantidad para agregar"))
+      productos[productCode].cantidad += qty
+      alert('Agregado correctamente')
+    }
+  </script>
+  <button type="button" onclick="iniciarCompra()">Start</button>
+  <button type="button" onclick="generarReporte()">Generate Report</button>
+  <button type="button" onclick="topUpProduct()">top-up product</button>
+
+  </body>
+</html>

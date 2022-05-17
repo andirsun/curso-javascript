@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<script>
+  const edad = 22
+  // Objeto u Objeto tipo JSON
+  const persona = {
+    edad: 22,
+    nombre: "Anderson",
+    apellido: "Laverde",
+  }
+  // alert(JSON.stringify(persona))
+  // Acceder a una propiedad
+  // alert(persona.edad)
+  // Modificar una propiedad
+  persona.nombre = "Luisa"
+  persona.apellido = "Susunaga"
+  delete persona.nombre
+  // Crear propiedades
+  persona.amigos = ["Mari", "Anderson", "Yisus"]
+  
+  alert(JSON.stringify(persona))
+  const saludar = () => {
+    alert('Hola como estas')
+  }
+</script>
+<h1>Proyecto modulo 1</h1>
+<button type="button" onclick="saludar()" >Saludar</button>
+</body>
+</html>

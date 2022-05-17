@@ -68,5 +68,5 @@ true && true && true // true
 // Para que un Or sea verdadero(true) los valores de verdad que tiene a su derecha o izquierda, alguno de los dos debe ser true
 true || false || false // true
 4 < 3 || 5 < 2
-// Condicionales
+
 

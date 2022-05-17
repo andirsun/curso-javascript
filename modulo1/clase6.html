@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titulo Clase</title>
+</head>
+<body>
+  <h1>Condicionales</h1>
+  <script>
+    /**
+     * NUmeros mayores y menores
+     * Pograma que pide al usuario 2 numeros y dice cual numero es mayor y cual es menor
+    */
+    // var numero1 = prompt("Dame el primer numero")
+    // var numero2 = prompt("Dame el segundo numero")
+    // var texto = prompt("Dame un texto")
+
+    // // Si el numero1 o numero2 no son numeros entonces muestro una alerta 
+    // if (isNaN(numero1) || isNaN(numero2)) {
+    //   alert('Solo se aceptan numeros')
+    // } else {
+    //   // Cambio los numeros en formato texto a tipo numero '1' => 1
+    //   numero1 = parseInt(numero1)
+    //   numero2 = parseInt(numero2)
+  
+    //   if (numero1 > numero2) {
+    //     console.log (`El numero mayor es el ${numero1}`)
+    //   } else {
+    //     console.log (`El numero mayor es el ${numero2}`)
+    //   }
+    // }
+
+    /**
+     * Imprimir numeros en un rango
+     * Pedir al usuario dos numeros, luego imprimir los numeros entre esos dos numeros
+     */
+    // 1, 10 -> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    // 2, 4 -> 2, 3, 4
+    // var numero1 = prompt("Dame el primer numero")
+    // var numero2 = prompt("Dame el segundo numero")
+
+    // if (isNaN(numero1) || isNaN(numero2)) {
+    //   alert('Solo se aceptan numeros')
+    // } else {
+    //   numero1 = parseInt(numero1)
+    //   numero2 = parseInt(numero2)
+
+    //   // for (var contador = numero1; contador <= numero2; contador++) {
+    //   //   console.log(contador)
+    //   // }
+
+    //   var contador = numero1
+    //   while (contador <= numero2) {
+    //     console.log(contador)  
+    //     contador++
+    //   }
+    // }
+
+    /**
+     * Ejercicio calculadora
+     * Pedir dos numeros al usuario y mostrar el resultado de multiplicarlos, dividirlos, sumarlos y restarlos
+    */
+
+    /**
+     * Busqueda de un numero
+     * Crear un array de 10 numeros [1,2,3,4,5,6,7,8,9,10], luego pedir al usuario un numero
+     * y mostrar si esta en el array
+     */
+    const lista = [1,2,3,4,5,6,7,8,9,10]
+    var numeroABuscar = prompt("Que numero quieres buscar")
+    // // Transformo el texto un numero
+    numeroABuscar = parseInt(numeroABuscar)
+
+    var contador = 0
+    var tamanoLista = lista.length
+    while (contador <= tamanoLista - 1) {
+      // Saco el elemento del array para comparar
+      var elementoActual = lista[contador]
+      // Pregunto si el elemento que saque es el elemento que el usuario esta buscando
+      if (numeroABuscar === elementoActual) {
+        alert('Encontre el numero')
+      }
+      // Modifico el contador
+      contador++
+    }
+    
+
+
+
+    
+    
+  </script>
+</body>
+</html>
